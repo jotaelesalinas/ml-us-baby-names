@@ -14,14 +14,15 @@ Clone this repo and open it with Jupyter Notebook.
 
 Run each one of these notebooks in order:
 
-### `1 download raw data`
+### 1 download raw data
 
-This will download the historical data for each year and state.
+This will download the historical data for each year and state using basic
+**web scraping** techniques.
 
 Make sure that the constants `YEAR_START` and `YEAR_END` (which can be found in the
 file `constants.py`) match the available dates in the website.
 
-### `2 compute features`
+### 2 compute features
 
 With the historical data, this script will compute the features needed to run the machine learning
 algorithm in the next step.
@@ -43,11 +44,11 @@ The dataset has the following columns:
 - difference with 1..5 years ago x 51 states
 - label
 
-### `3 generate model`
+### 3 generate model
 
 With the features and labels generated in the previous step, a
 [Random Forest Classifier](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html)
-from the library scikit-learn is used to build a model that can predict the most common name next year.
+from the library **scikit-learn** is used to build a model that can predict the most common name next year.
 
 The random forest classifier has been used because it is generally a good choice for classification tasks,
 especially when the data is complex and there are many features (in this case, we have 306 features).
@@ -57,13 +58,13 @@ subset of the data, to make predictions. This can improve the accuracy and robus
 but interpretability of the model is more complicated.
 
 Other classification algorithms have been tested, but none of them has beaten the random forest
-(at least in their basic configuration):
+(at least with their default configuration):
 
 - [Logistic regression](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html)
 - [Support vector machines](https://scikit-learn.org/stable/modules/generated/sklearn.svm.SVC.html)
 - [Neural networks](https://scikit-learn.org/stable/modules/generated/sklearn.neural_network.MLPClassifier.html)
 
-Once the model has been generated, it is tested for every year, with 100% accuracy.
+Once the model has been generated, it is tested for every year, with **100% accuracy** ✅.
 
 Finally, a prediction is made for next year.
 
