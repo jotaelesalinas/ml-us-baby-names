@@ -1,5 +1,6 @@
-YEAR_START = 1960
-YEAR_END = 2021
+YEAR_START = 1960   # if you change YEAR_START or YEAR_END,
+YEAR_END = 2021     # remove all CSV files except CSV_RAW
+
 COMPUTE_YEARS_BACKWARDS = 5
 YEARS_NO_TRAINING = 5
 
@@ -13,6 +14,9 @@ STATES = ('AL', 'AK', 'AZ', 'AR', 'CA', 'CO', 'CT', 'DE', 'DC', 'FL',
 URL_YEAR_COUNTRY = 'https://www.ssa.gov/cgi-bin/popularnames.cgi'
 URL_YEAR_STATE = 'https://www.ssa.gov/cgi-bin/namesbystate.cgi'
 
-RAW_CSV = "data_raw_year_state.csv"
-RAW_CSV_COUNTRY = "data_raw_country.csv"
-FEATURES_CSV = "data_features_%s.csv"
+CSV_RAW = "data_raw.csv"
+
+CSV_COUNTRY = "data_country.csv"
+CSV_FEATURES_CURRENT = "data_features_1_current.csv"
+CSV_FEATURES_PAST = "data_features_2_past.csv"
+CSV_FEATURES_LABEL = "data_features_3_label.csv"
