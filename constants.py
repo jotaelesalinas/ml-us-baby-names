@@ -1,6 +1,7 @@
 YEAR_START = 1960
 YEAR_END = 2021
 COMPUTE_YEARS_BACKWARDS = 5
+YEARS_NO_TRAINING = 5
 
 STATES = ('AL', 'AK', 'AZ', 'AR', 'CA', 'CO', 'CT', 'DE', 'DC', 'FL',
           'GA', 'HI', 'ID', 'IL', 'IN', 'IA', 'KS', 'KY', 'LA', 'ME',
