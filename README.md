@@ -14,7 +14,7 @@ Clone this repo and open it with Jupyter Notebook.
 
 Run each one of these notebooks in order:
 
-### [1 download raw data](1 download raw data.ipynb)
+### [1 download raw data](1_download_raw_data.ipynb)
 
 This will download the historical data for each year and state using basic
 **web scraping** techniques.
@@ -22,7 +22,7 @@ This will download the historical data for each year and state using basic
 Make sure that the constants `YEAR_START` and `YEAR_END` (which can be found in the
 file `constants.py`) match the available dates in the website.
 
-### [2 compute features](2 compute features.ipynb)
+### [2 compute features](2_compute_features.ipynb)
 
 With the historical data, this script will compute the features needed to run the machine learning
 algorithm in the next step.
@@ -44,7 +44,7 @@ The dataset has the following columns:
 - difference with 1..5 years ago x 51 states
 - label
 
-### [3 generate model](3 generate model.ipynb)
+### [3 generate model](3_generate_model.ipynb)
 
 With the features and labels generated in the previous step, a
 [Random Forest Classifier](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html)
