@@ -69,6 +69,6 @@ The 5 most recent years are removed from the dataset, leaving 51 years to train 
 Once trained, the model is tested against those missing 5 years, with **80% accuracy**
 (not really significant due the low number of predictions).
 
-Finally, a prediction is made for next year 2022: **Liam**.
+Finally, a prediction is made for 2022: **Liam**.
 
 Will it be correct?
